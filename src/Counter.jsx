@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export default function Counter() {
     let [count, setCount] = useState(0); //initialization
+    console.log("component was re-rendered");
 
     let incCount = () => {
         // setCount((currCount) => {
@@ -10,7 +11,8 @@ export default function Counter() {
         // setCount((currCount) => {
         //     return currCount + 1;
         // });
-        setCount(count+1);
+        // setCount(count+1);
+        setCount(25);
     };
 
     return (
