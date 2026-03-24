@@ -1,12 +1,10 @@
-import './App.css'
-import Counter from './Counter';
-import LikeButton from './LikeButton';
+import './App.css';
+import LudoBoard from './LudoBoard';
 
 function App() {
   return (
     <>
-      <p>States in React</p>
-      <LikeButton />
+      <LudoBoard />
     </>
   );
 }
