@@ -1,16 +1,35 @@
 import { useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
 
 export default function ToDoList() {
-    let [todos, setTodos] = useState(["sample Task"]);
+    let [todos, setTodos] = useState([{task: "sample-task", id: uuidv4()}]);
     let [newTodo, setNewTodo] = useState("");
 
     let addNewTask = () => {
-        setTodos([...todos, newTodo]);
+        setTodos((prevTodos) => {
+            return [...prevTodos, {task: newTodo, id: uuidv4()}]
+        });
         setNewTodo("");
     };
 
     let updateTodoValue = (event) => {
         setNewTodo(event.target.value);
+    };
+
+    let deleteTodo = (id) => {
+        setTodos((prevTodos) => 
+            todos.filter((prevTodos) => prevTodos.id != id));
+    };
+
+    let upperCaseAll = () => {
+        setTodos( (prevTodos) => (
+            prevTodos.map((todo) => {
+                return {
+                    ...todo,
+                    task: todo.task.toUpperCase(),
+                };
+            })
+        ));
     };
 
     return (
@@ -29,9 +48,16 @@ export default function ToDoList() {
             <h4>Tasks ToDo</h4>
             <ul>
                 {todos.map((todo) => (
-                    <li>{todo}</li>
+                    <li key={todo.id}>
+                        <span>{todo.task}</span>
+                        &nbsp;&nbsp;&nbsp;
+                        <button onClick={() => deleteTodo(todo.id)}>delete</button>
+                    </li>
                 ))}
             </ul>
+
+            <br></br>
+            <button onClick={upperCaseAll}>UpperCase All</button>
         </div>
     );
 }
