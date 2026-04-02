@@ -1,18 +1,62 @@
-# React + Vite
+# ⚛️ React States
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-JavaScript%20Library-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-Logic-yellow)
+![Frontend](https://img.shields.io/badge/Frontend-React%20App-green)
+![GitHub](https://img.shields.io/badge/GitHub-Repository-black)
 
-Currently, two official plugins are available:
+A practice repository focused on understanding **React state management** and how component state controls dynamic UI behavior.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project explores how React components manage and update data using hooks like **useState**.
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🚀 About This Repository
 
-Note: This will impact Vite dev & build performances.
+This repository contains small experiments and practice examples that demonstrate how **React state works inside functional components**.
 
-## Expanding the ESLint configuration
+React state allows components to store and update data, enabling dynamic user interfaces that respond to user interactions.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Topics Covered
+
+* React functional components
+* useState hook
+* Updating state values
+* Event handling
+* Conditional rendering
+* Managing multiple states
+* Passing state between components
+
+---
+
+## 🛠 Technologies Used
+
+* React.js
+* JavaScript (ES6+)
+* HTML
+* CSS
+
+---
+
+## 🎯 Learning Goals
+
+This repository was created to:
+
+* Understand React state fundamentals
+* Practice managing dynamic UI updates
+* Learn how React re-renders components when state changes
+* Build interactive frontend components
+
+---
+
+## 👩‍💻 Author
+
+**Suhani Saraswat**
+
+---
+
+## ⭐ Note
+
+This repository is part of my **React learning journey** and focuses on practicing state management concepts in React.
